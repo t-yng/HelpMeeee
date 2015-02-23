@@ -9,6 +9,8 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
+import com.loopj.android.image.SmartImageView;
+
 public class TweetAdapter extends ArrayAdapter<Status> {
 
 	private LayoutInflater mInflater;
@@ -35,6 +37,9 @@ public class TweetAdapter extends ArrayAdapter<Status> {
 		
 		TextView text = (TextView) convertView.findViewById(R.id.text);
 		text.setText(item.getText());
+		
+		SmartImageView icon = (SmartImageView) convertView.findViewById(R.id.icon);
+		icon.setImageUrl(item.getUser().getProfileImageURL());
 		
 //		String item = getItem(position);
 //		TextView textView = (TextView) convertView.findViewById(R.id.list_item_text);

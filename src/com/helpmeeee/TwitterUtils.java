@@ -18,9 +18,12 @@ public class TwitterUtils {
     private static final String TOKEN_SECRET = "token_secret";
     private static final String PREF_NAME = "twitter_access_token";
     
-    private static String TWITTER_CONSUMER_KEY;
-    private static String TWITTER_CONSUMER_SECRET;
+//    private static String TWITTER_CONSUMER_KEY;
+//    private static String TWITTER_CONSUMER_SECRET;
     
+    private static String TWITTER_CONSUMER_KEY = "LhOAFIpwG4fgvZQNnMdGMcO6V";
+    private static String TWITTER_CONSUMER_SECRET = "bqDSco06bZgFhbEO50sIdSYDPijhDpCx8w7PwrKqWSuES5A6Qn";
+
 	private static AsyncUpdateStatusTask mAsyncUpdateStatusTask; 
 
     private static Twitter mTwitter;
